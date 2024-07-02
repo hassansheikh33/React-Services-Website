@@ -1,0 +1,47 @@
+.container {
+  margin-top: 30px;
+  display: inline-block;
+}
+
+.memberDetails {
+  margin-top: 0.7rem;
+}
+
+.memberDetails p {
+  color: rgb(75 85 99);
+  margin-top: 0;
+  font-size: 0.85rem;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.link h2:hover {
+  text-decoration: underline;
+}
+
+.memberDetails h2 {
+  font-family: Segoe UI;
+  font-weight: 450;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.imageContainer {
+  max-width: 400px;
+  max-height: 300px;
+}
+
+.imageContainer img {
+  object-fit: cover;
+  border-radius: 15px;
+  width: 16rem;
+  height: 16rem;
+}
+
+.imageContainer img:hover,
+.imageContainer img:active {
+  cursor: pointer;
+}

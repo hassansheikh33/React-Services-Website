@@ -1,0 +1,96 @@
+.container {
+  text-align: center;
+  width: 100%;
+}
+.text {
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
+.text h1 {
+  font-weight: 800;
+  font-size: 3.75rem;
+  color: rgb(17 24 39);
+}
+
+.green {
+  color: rgb(71 177 110);
+}
+
+.text p {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  color: rgb(75 85 99);
+  margin: auto;
+  width: 90%;
+}
+
+.btnContainer {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.btnContainer button {
+  font-size: 1.15rem;
+  padding: 15px 25px 15px 25px;
+  border: none;
+  border-radius: 12px;
+  margin-top: 40px;
+}
+
+.getStartedBtn {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  background-color: rgb(74 222 128);
+  margin-right: 10px;
+}
+
+.arrow {
+  margin-left: 5px;
+  width: 1rem;
+  height: 1rem;
+}
+
+.learnMoreBtn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imageContainer {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  box-shadow: 0 25px 50px -12px rgb(0, 0, 0, 0.25);
+}
+
+.imgTop {
+  padding: 17px;
+  background-color: rgb(74 222 128);
+  border-radius: 12px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.image {
+  width: 100%;
+}
+
+.circle {
+  margin: 2px;
+  display: inline-block;
+  width: 0.6rem;
+  height: 0.6rem;
+  border: 2px solid white;
+  border-radius: 999px;
+}

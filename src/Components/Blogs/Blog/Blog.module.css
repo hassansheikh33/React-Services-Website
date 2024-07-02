@@ -1,0 +1,58 @@
+.image {
+  z-index: 0;
+}
+
+.imgText {
+  position: absolute;
+  z-index: 10;
+  padding: 15px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 90%;
+  height: 90%;
+}
+
+.date {
+  display: flex;
+  justify-content: flex-end;
+  letter-spacing: -0.3px;
+  font-weight: 500;
+  margin-top: 8px;
+  margin-right: 7px;
+  font-size: 0.75rem;
+}
+
+.box {
+  display: flex;
+  position: relative;
+}
+
+.link {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  padding: 0;
+}
+
+.link p {
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-left: 0;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.bottomText * {
+  margin: 5px;
+}
+
+.bottomText h2 {
+  font-weight: 500;
+  font-size: 1.3rem;
+}

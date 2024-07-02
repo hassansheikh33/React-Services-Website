@@ -1,0 +1,46 @@
+.container {
+  max-width: 80%;
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+.textContainer {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.blogs {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.blogText {
+  margin-top: 0;
+}
+
+/*  */
+
+.blogContainer {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.col1,
+.col2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 30px;
+}
+
+.col2 {
+  margin-left: 30px;
+}
+
+.col1upper,
+.col2lower {
+  display: flex;
+  justify-content: space-between;
+}
