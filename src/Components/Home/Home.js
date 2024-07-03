@@ -1,6 +1,8 @@
 import React from "react";
 import classes from "./Home.module.css";
+import { useNavigate } from "react-router-dom";
 export default function Home() {
+  const navigate = useNavigate();
   return (
     <div className={classes.container}>
       <div className={classes.text}>
@@ -14,7 +16,10 @@ export default function Home() {
         </p>
       </div>
       <div className={classes.btnContainer}>
-        <button className={classes.getStartedBtn}>
+        <button
+          onClick={() => navigate("/services")}
+          className={classes.getStartedBtn}
+        >
           Get Started
           <svg
             className={classes.arrow}
@@ -25,7 +30,10 @@ export default function Home() {
             <path d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"></path>
           </svg>
         </button>
-        <button className={classes.learnMoreBtn}>
+        <button
+          onClick={() => navigate("/aboutUs")}
+          className={classes.learnMoreBtn}
+        >
           Learn More{" "}
           <svg
             className={classes.arrow}

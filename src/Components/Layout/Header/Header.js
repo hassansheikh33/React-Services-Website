@@ -33,6 +33,16 @@ export default function Header() {
           Home
         </NavLink>
         <NavLink
+          to="/services"
+          className={({ isActive }) =>
+            isActive
+              ? `${classes.navItem} ${classes.services}`
+              : `${classes.navItem}`
+          }
+        >
+          Services
+        </NavLink>
+        <NavLink
           to="/team"
           className={({ isActive }) =>
             isActive
@@ -61,16 +71,6 @@ export default function Header() {
           }
         >
           About
-        </NavLink>
-        <NavLink
-          to="/services"
-          className={({ isActive }) =>
-            isActive
-              ? `${classes.navItem} ${classes.services}`
-              : `${classes.navItem}`
-          }
-        >
-          Services
         </NavLink>
         <NavLink
           to="/contact"

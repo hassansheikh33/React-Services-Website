@@ -15,15 +15,13 @@ export default function AboutUs() {
           ipsam doloribus, modi praesentium magnam, similique nobis ipsa dolorem
         </p>
         <div className={classes.btnContainer}>
-          <button onClick={() => navigate("/")} className={classes.homeBtn}>
-            Get Started
-          </button>
           <button
             onClick={() => navigate("/services")}
             className={classes.servicesBtn}
           >
             Checkout Our Services!
           </button>
+          <button onClick={() => navigate("/contact")}>Contact Us</button>
         </div>
       </div>
       <div className={classes.pictureContainer}>
