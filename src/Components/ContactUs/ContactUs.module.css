@@ -1,0 +1,90 @@
+.container {
+  max-width: 100%;
+  padding: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.left,
+.right {
+  width: 45%;
+}
+
+.left {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.h2 {
+  color: rgb(31 41 55);
+  font-size: 2rem;
+}
+
+.icon {
+  max-height: 1.5rem;
+  max-width: 1.5rem;
+  color: rgb(59 130 246);
+}
+
+.ContactInfo {
+  display: flex;
+  justify-content: flex-start;
+  column-gap: 15px;
+  align-items: center;
+}
+
+.links {
+  margin-right: 5px;
+  max-height: 2rem;
+  max-width: 2rem;
+  color: grey;
+}
+
+.links:hover {
+  color: rgb(59 130 246);
+}
+
+.rightContainer {
+  width: 75%;
+  margin: auto;
+}
+
+.formContainer {
+  background-color: white;
+  box-shadow: 0px 0px 7px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  width: 100%;
+  padding: 10px 25px 20px 25px;
+}
+
+.formContainer label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.formContainer fieldset {
+  border: none;
+  margin: 10px;
+  padding: 0;
+}
+
+.formContainer input,
+textarea {
+  font-size: 1rem;
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid rgb(204, 204, 204);
+  width: 90%;
+}
+
+.submitBtn {
+  cursor: pointer;
+  padding: 15px;
+  color: white;
+  background-color: rgb(59 130 246);
+  border: none;
+  border-radius: 5px;
+  width: 97%;
+}

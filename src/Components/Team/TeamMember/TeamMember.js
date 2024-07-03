@@ -1,6 +1,6 @@
 import React from "react";
 import classes from "./TeamMember.module.css";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 export default function TeamMember(props) {
   const navigate = useNavigate();
@@ -19,10 +19,8 @@ export default function TeamMember(props) {
         style={props.mt ? { marginTop: props.mt } : {}}
         className={classes.memberDetails}
       >
-        <Link className={classes.link} to={props.designation}>
-          <h2>{props.name}</h2>
-          <p>{props.designation}</p>
-        </Link>
+        <h2>{props.name}</h2>
+        <p>{props.designation}</p>
       </div>
     </div>
   );

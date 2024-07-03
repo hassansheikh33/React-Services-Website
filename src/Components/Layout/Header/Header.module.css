@@ -1,0 +1,48 @@
+.navbar {
+  position: relative;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 10px 15px -3px;
+  background-color: white;
+}
+
+.logoName {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.logoName svg {
+  width: 5rem;
+  height: 5rem;
+}
+
+.h1 {
+  font-size: 1.7rem;
+  text-decoration: none;
+  color: rgb(31 41 55);
+}
+
+.navItem {
+  padding: 10px 15px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: rgb(31 41 55);
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+.navItem:hover {
+  background-color: whitesmoke;
+}
+
+.active {
+  color: rgb(71, 177, 110);
+}
+
+.services {
+  color: rgb(80, 147, 255);
+}

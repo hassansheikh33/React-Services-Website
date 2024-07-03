@@ -1,0 +1,54 @@
+.container {
+  max-width: 80%;
+  margin: auto;
+  display: flex;
+  padding-top: 3.8rem;
+  justify-content: space-around;
+  /* max-height: 90vh; */
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 50%;
+}
+
+.textContainer h1 {
+  margin-bottom: 0;
+  color: rgb(17 24 39);
+}
+
+.textContainer p {
+  line-height: 1.5rem;
+  color: rgb(75 85 99);
+  font-size: 1.15rem;
+}
+
+.btnContainer button {
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: none;
+  background-color: white;
+  color: rgb(17 24 39);
+  font-size: 1rem;
+  box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.25);
+  font-weight: 500;
+}
+
+.btnContainer button:hover {
+  background-color: rgb(71 177 110);
+  color: white;
+}
+
+.homeBtn {
+  margin-right: 15px;
+}
+
+.pictureContainer {
+  margin-bottom: 0;
+}
+
+.pictureContainer img {
+  width: 384px;
+}

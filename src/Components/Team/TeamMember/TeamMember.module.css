@@ -18,10 +18,6 @@
   color: inherit;
 }
 
-.link h2:hover {
-  text-decoration: underline;
-}
-
 .memberDetails h2 {
   font-family: Segoe UI;
   font-weight: 450;

@@ -1,0 +1,61 @@
+.container {
+  background-color: rgb(235, 235, 235);
+  padding: 15px 30px;
+  max-width: 25%;
+  border-radius: 10px;
+  text-align: center;
+  display: inline-block;
+}
+
+.container:hover {
+  background-color: rgb(223, 223, 223);
+}
+
+.container:hover .textContainer p {
+  color: rgb(95, 100, 110);
+}
+
+.iconContainer {
+  border-radius: 999px;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin: auto;
+  padding: 0.75rem;
+  background-color: rgb(195, 228, 228);
+}
+
+.iconContainer svg {
+  color: rgb(59 130 246);
+}
+
+.textContainer p {
+  color: rgb(107 114 128);
+  margin-bottom: 0;
+}
+
+.link {
+  text-decoration: none;
+  color: rgb(59 130 246);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.link p {
+  font-size: 0.85rem;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.textContainer h2 {
+  margin-top: 7px;
+  margin-bottom: 0;
+  color: rgb(55 65 81);
+}
+
+.arrow {
+  width: 1rem;
+  height: 1rem;
+}
