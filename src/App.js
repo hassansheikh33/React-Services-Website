@@ -5,39 +5,44 @@ import ErrorPage from "./Components/Error/ErrorPage";
 import { lazy } from "react";
 import Home from "./Components/Home/Home";
 
-const router = createBrowserRouter([
+const router = createBrowserRouter(
+  [
+    {
+      path: "/",
+      element: <Root />,
+      errorElement: <ErrorPage />,
+      children: [
+        {
+          index: true,
+          element: <Home />,
+        },
+        {
+          path: "/team",
+          Component: lazy(() => import("./Components/Team/Team")),
+        },
+        {
+          path: "/blogs",
+          Component: lazy(() => import("./Components/Blogs/Blogs")),
+        },
+        {
+          path: "/aboutUs",
+          Component: lazy(() => import("./Components/AboutUs/AboutUs")),
+        },
+        {
+          path: "/services",
+          Component: lazy(() => import("./Components/Services/Services")),
+        },
+        {
+          path: "/contact",
+          Component: lazy(() => import("./Components/ContactUs/ContactUs")),
+        },
+      ],
+    },
+  ],
   {
-    path: "/",
-    element: <Root />,
-    errorElement: <ErrorPage />,
-    children: [
-      {
-        index: true,
-        element: <Home />,
-      },
-      {
-        path: "/team",
-        Component: lazy(() => import("./Components/Team/Team")),
-      },
-      {
-        path: "/blogs",
-        Component: lazy(() => import("./Components/Blogs/Blogs")),
-      },
-      {
-        path: "/aboutUs",
-        Component: lazy(() => import("./Components/AboutUs/AboutUs")),
-      },
-      {
-        path: "/services",
-        Component: lazy(() => import("./Components/Services/Services")),
-      },
-      {
-        path: "/contact",
-        Component: lazy(() => import("./Components/ContactUs/ContactUs")),
-      },
-    ],
-  },
-]);
+    basename: "/React-Services-Website",
+  }
+);
 
 function App() {
   return (
