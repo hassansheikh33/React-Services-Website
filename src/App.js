@@ -1,9 +1,9 @@
 import "./App.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Root from "./pages/Root";
-import ErrorPage from "./pages/ErrorPage";
+import Root from "./Components/Layout/Root";
+import ErrorPage from "./Components/Error/ErrorPage";
 import { lazy } from "react";
-import Home from "./pages/HomePage";
+import Home from "./Components/Home/Home";
 
 const router = createBrowserRouter([
   {
@@ -17,32 +17,23 @@ const router = createBrowserRouter([
       },
       {
         path: "/team",
-        children: [
-          {
-            index: true,
-            Component: lazy(() => import("./pages/TeamPage")),
-          },
-          {
-            path: "/team/CEO",
-            Component: lazy(() => import("./pages/CEO")),
-          },
-          {
-            path: "/team/CoFounder",
-            Component: lazy(() => import("./pages/CoFounder")),
-          },
-          {
-            path: "/team/Manager",
-            Component: lazy(() => import("./pages/Manager")),
-          },
-        ],
+        Component: lazy(() => import("./Components/Team/Team")),
       },
       {
         path: "/blogs",
-        Component: lazy(() => import("./pages/BlogsPage")),
+        Component: lazy(() => import("./Components/Blogs/Blogs")),
       },
       {
         path: "/aboutUs",
-        Component: lazy(() => import("./pages/AboutUsPage")),
+        Component: lazy(() => import("./Components/AboutUs/AboutUs")),
+      },
+      {
+        path: "/services",
+        Component: lazy(() => import("./Components/Services/Services")),
+      },
+      {
+        path: "/contact",
+        Component: lazy(() => import("./Components/ContactUs/ContactUs")),
       },
     ],
   },
