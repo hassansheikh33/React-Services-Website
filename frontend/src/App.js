@@ -27,7 +27,6 @@ const router = createBrowserRouter(
         {
           path: "/blogs",
           Component: lazy(() => import("./Components/Blogs/Blogs")),
-          loader: tokenProtectLoader,
         },
         {
           path: "/aboutUs",
@@ -36,7 +35,6 @@ const router = createBrowserRouter(
         {
           path: "/services",
           Component: lazy(() => import("./Components/Services/Services")),
-          loader: tokenProtectLoader,
         },
         {
           path: "/contact",
