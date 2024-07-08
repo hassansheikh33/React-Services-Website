@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/React-Services-Website/static/css/main.5a256cc4.css",
-    "main.js": "/React-Services-Website/static/js/main.974cfce2.js",
+    "main.js": "/React-Services-Website/static/js/main.be58b6a5.js",
     "static/css/176.08f02938.chunk.css": "/React-Services-Website/static/css/176.08f02938.chunk.css",
     "static/js/176.7df9b283.chunk.js": "/React-Services-Website/static/js/176.7df9b283.chunk.js",
     "static/css/149.b7cb3b4e.chunk.css": "/React-Services-Website/static/css/149.b7cb3b4e.chunk.css",
@@ -15,7 +15,7 @@
     "static/media/mobile.png": "/React-Services-Website/static/media/mobile.98f7229ec5e91ec4adb8.png",
     "index.html": "/React-Services-Website/index.html",
     "main.5a256cc4.css.map": "/React-Services-Website/static/css/main.5a256cc4.css.map",
-    "main.974cfce2.js.map": "/React-Services-Website/static/js/main.974cfce2.js.map",
+    "main.be58b6a5.js.map": "/React-Services-Website/static/js/main.be58b6a5.js.map",
     "176.08f02938.chunk.css.map": "/React-Services-Website/static/css/176.08f02938.chunk.css.map",
     "176.7df9b283.chunk.js.map": "/React-Services-Website/static/js/176.7df9b283.chunk.js.map",
     "149.b7cb3b4e.chunk.css.map": "/React-Services-Website/static/css/149.b7cb3b4e.chunk.css.map",
@@ -29,6 +29,6 @@
   },
   "entrypoints": [
     "static/css/main.5a256cc4.css",
-    "static/js/main.974cfce2.js"
+    "static/js/main.be58b6a5.js"
   ]
 }
