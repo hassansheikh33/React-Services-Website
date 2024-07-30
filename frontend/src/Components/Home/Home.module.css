@@ -95,3 +95,143 @@
   border: 2px solid white;
   border-radius: 999px;
 }
+
+/* Media Queries */
+
+/* Small devices (phones, 0px and up) */
+@media (max-width: 575.98px) {
+  .text {
+    margin-top: 30px;
+    width: 90%;
+  }
+
+  .text h1 {
+    font-size: 2.1rem;
+  }
+
+  .text p {
+    font-size: 1.1rem;
+  }
+
+  .btnContainer {
+    margin-bottom: 40px;
+  }
+
+  .getStartedBtn {
+    justify-content: center;
+  }
+
+  .btnContainer button {
+    width: 70%;
+    font-size: 1rem;
+    padding: 10px 20px;
+    margin-top: 20px;
+  }
+
+  .imageContainer {
+    width: 100%;
+  }
+
+  .imgTop {
+    padding: 10px;
+  }
+}
+
+@media (min-width: 575.98px) and (max-width: 767.99px) {
+  .text {
+    width: 80%;
+  }
+
+  .text h1 {
+    font-size: 2.5rem;
+  }
+
+  .text p {
+    font-size: 1.1rem;
+  }
+
+  .btnContainer button {
+    font-size: 1.1rem;
+    padding: 12px 22px;
+    margin-top: 30px;
+  }
+
+  .imageContainer {
+    width: 80%;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .text {
+    width: 85%;
+  }
+
+  .text h1 {
+    font-size: 3rem;
+  }
+
+  .text p {
+    font-size: 1.2rem;
+  }
+
+  .btnContainer button {
+    font-size: 1.1rem;
+    padding: 12px 22px;
+    margin-top: 30px;
+  }
+
+  .imageContainer {
+    width: 80%;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .text {
+    width: 70%;
+  }
+
+  .text h1 {
+    font-size: 3.5rem;
+  }
+
+  .text p {
+    font-size: 1.3rem;
+  }
+
+  .btnContainer button {
+    font-size: 1.15rem;
+    padding: 14px 24px;
+    margin-top: 35px;
+  }
+
+  .imageContainer {
+    width: 75%;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) (default styles i write for my laptop) */
+/* @media (min-width: 1200px) {
+  .text {
+    width: 60%;
+  }
+
+  .text h1 {
+    font-size: 3.75rem;
+  }
+
+  .text p {
+    font-size: 1.25rem;
+  }
+
+  .btnContainer button {
+    font-size: 1.15rem;
+    padding: 15px 25px;
+    margin-top: 40px;
+  }
+
+  .imageContainer {
+    width: 70%;
+  }
+} */

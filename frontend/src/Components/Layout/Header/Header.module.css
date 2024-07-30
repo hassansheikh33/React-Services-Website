@@ -1,10 +1,11 @@
 .navbar {
+  width: 100%;
   position: relative;
   margin: 0;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 100px;
+  height: 80px;
   box-shadow: rgba(0, 0, 0, 0.1) 0 10px 15px -3px;
   background-color: white;
 }
@@ -12,31 +13,35 @@
 .logoName {
   display: flex;
   align-items: center;
-  column-gap: 10px;
 }
 
 .logoName svg {
+  margin-top: -5px;
   width: 5rem;
   height: 5rem;
 }
 
 .h1 {
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   text-decoration: none;
   color: rgb(31 41 55);
 }
 
+.navMenu {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  max-width: 250rem;
+  width: 40%;
+}
+
 .navItem {
-  padding: 10px 15px;
-  font-size: 1.2rem;
+  padding: 8px 8px;
+  font-size: 1.1rem;
   text-decoration: none;
   color: rgb(31 41 55);
   border-radius: 5px;
   font-weight: 500;
-}
-
-.navItem:hover {
-  background-color: whitesmoke;
 }
 
 .active {
@@ -55,4 +60,71 @@
   background-color: transparent;
   border: none;
   font: inherit;
+}
+
+.menuBtn {
+  padding: 3px;
+  display: none;
+}
+
+.menuPiece {
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 5px 0;
+  border-radius: 30px;
+}
+
+.menuBtn:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.shown {
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: rgb(253, 253, 253);
+  position: absolute;
+  z-index: 999;
+  width: 100%;
+  text-align: right;
+  top: 80px;
+  font-size: 1.3rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid black;
+}
+
+@media (max-width: 1199.98px) {
+  .navMenu {
+    display: none;
+  }
+  .menuBtn {
+    display: block;
+  }
+  .shown {
+    display: flex;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar {
+    justify-content: space-between;
+    height: 65px;
+  }
+
+  .h1 {
+    font-size: 1.2rem;
+  }
+
+  .menuPiece {
+    height: 4px;
+  }
+
+  .logoName svg {
+    width: 4rem;
+    height: 4rem;
+    margin-top: -7px;
+  }
+  .shown {
+    top: 60px;
+  }
 }

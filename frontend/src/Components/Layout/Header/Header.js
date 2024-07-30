@@ -1,9 +1,29 @@
 import classes from "./Header.module.css";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Form, Link, NavLink, useLoaderData } from "react-router-dom";
 import { getDuration } from "../../../util/token";
 
 export default function Header() {
+  const [shown, setShown] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 1200) {
+        setShown(false);
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    // Cleanup the event listener on component unmount
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  function showMenu() {
+    setShown((prevState) => !prevState);
+  }
   const token = useLoaderData();
   return (
     <nav className={classes.navbar}>
@@ -24,10 +44,13 @@ export default function Header() {
           ></path>
         </svg>
         <Link to="/" className={classes.h1}>
-          <h1>React Services</h1>
+          <h1>React&nbsp;Services</h1>
         </Link>
       </div>
-      <div className={classes.navMenu}>
+      <div
+        className={`${classes.navMenu} ${shown ? classes.shown : ""}`}
+        onClick={() => setShown(false)}
+      >
         <NavLink
           to="/"
           className={({ isActive }) =>
@@ -86,7 +109,7 @@ export default function Header() {
               : `${classes.navItem}`
           }
         >
-          Contact Us
+          Contact&nbsp;Us
         </NavLink>
         {!token && (
           <NavLink
@@ -109,6 +132,11 @@ export default function Header() {
             <button type="submit">Logout</button>
           </Form>
         )}
+      </div>
+      <div className={classes.menuBtn} onClick={showMenu}>
+        <div className={classes.menuPiece}></div>
+        <div className={classes.menuPiece}></div>
+        <div className={classes.menuPiece}></div>
       </div>
     </nav>
   );
