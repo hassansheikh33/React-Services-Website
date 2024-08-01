@@ -2,7 +2,7 @@
   max-width: 100%;
   padding: 50px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 .left,
@@ -11,7 +11,7 @@
 }
 
 .left {
-  padding: 30px;
+  padding: 1.8rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -20,6 +20,10 @@
 .h2 {
   color: rgb(31 41 55);
   font-size: 2rem;
+}
+
+.query {
+  text-align: center;
 }
 
 .icon {
@@ -47,7 +51,7 @@
 }
 
 .rightContainer {
-  width: 75%;
+  width: 80%;
   margin: auto;
 }
 
@@ -79,6 +83,10 @@ textarea {
   width: 90%;
 }
 
+.form {
+  width: 100%;
+}
+
 .submitBtn {
   cursor: pointer;
   padding: 15px;
@@ -86,5 +94,21 @@ textarea {
   background-color: rgb(59 130 246);
   border: none;
   border-radius: 5px;
-  width: 97%;
+  min-width: 30%;
+}
+
+@media (max-width: 834.98px) {
+  .container {
+    flex-direction: column;
+    row-gap: 2rem;
+    justify-content: center;
+    padding-top: 0;
+  }
+  .right,
+  .left {
+    width: 90%;
+  }
+  .rightContainer {
+    width: 100%;
+  }
 }

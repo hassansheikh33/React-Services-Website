@@ -65,6 +65,7 @@
 .menuBtn {
   padding: 3px;
   display: none;
+  margin-right: 1rem;
 }
 
 .menuPiece {

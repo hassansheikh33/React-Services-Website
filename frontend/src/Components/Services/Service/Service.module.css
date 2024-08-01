@@ -84,17 +84,4 @@
   .container {
     width: 80%;
   }
-
-  .textContainer h2 {
-    font-size: 2em;
-  }
-  .textContainer p {
-    font-size: 1.15em;
-  }
-  .link p {
-    font-size: 1.15rem;
-  }
-  .arrow {
-    margin-top: 3.1px;
-  }
 }
