@@ -210,28 +210,3 @@
     width: 75%;
   }
 }
-
-/* Extra large devices (large desktops, 1200px and up) (default styles i write for my laptop) */
-/* @media (min-width: 1200px) {
-  .text {
-    width: 60%;
-  }
-
-  .text h1 {
-    font-size: 3.75rem;
-  }
-
-  .text p {
-    font-size: 1.25rem;
-  }
-
-  .btnContainer button {
-    font-size: 1.15rem;
-    padding: 15px 25px;
-    margin-top: 40px;
-  }
-
-  .imageContainer {
-    width: 70%;
-  }
-} */

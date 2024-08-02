@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 export default function Blog(props) {
   return (
-    <div className={classes.col1box1 + " " + classes.box}>
+    <div className={classes.box}>
       <img className={classes.image} src={props.src} alt={props.alt} />
       <div className={classes.imgText}>
         <p className={classes.date}>July 2, 2024</p>
