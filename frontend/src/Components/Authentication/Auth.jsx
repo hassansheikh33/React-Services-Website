@@ -76,9 +76,10 @@ export default function Auth() {
             type="button"
             className={classes.change}
           >
-            {isLogin
-              ? "First time here? Signup Now"
-              : "Already a user? Login here"}
+            {isLogin ? "First time here?" : "Already a user?"}{" "}
+            <span className={classes.changeModeBtn}>
+              {isLogin ? "Signup Now" : "Login here"}
+            </span>
           </Link>
         </Form>
       </div>

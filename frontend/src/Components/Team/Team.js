@@ -26,8 +26,7 @@ export default function Team() {
             designation="CEO"
             src="https://tailus.io/sources/blocks/classic/preview/images/man.jpg"
             alt="man"
-            height="20rem"
-            mt="35px"
+            main={true}
           />
           <TeamMember
             name="Taha Khokhar"

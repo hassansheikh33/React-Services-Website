@@ -7,8 +7,7 @@ export default function Home() {
     <div className={classes.container}>
       <div className={classes.text}>
         <h1>
-          Start <span className={classes.green}>React Routing</span> for your
-          project
+          Premium <span className={classes.green}>React Services</span>
         </h1>
         <p>
           Start gaining the traction you've always wanted with our next-level

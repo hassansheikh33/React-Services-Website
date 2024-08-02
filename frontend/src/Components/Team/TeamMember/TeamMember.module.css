@@ -30,14 +30,38 @@
   max-height: 300px;
 }
 
-.imageContainer img {
+.image {
   object-fit: cover;
   border-radius: 15px;
   width: 16rem;
   height: 16rem;
 }
 
-.imageContainer img:hover,
-.imageContainer img:active {
+.image:hover,
+.image:active {
   cursor: pointer;
+}
+
+.mainImage {
+  height: 20rem;
+}
+
+.mainMemberDetails {
+  margin-top: 2rem;
+}
+
+@media (min-width: 576px) and (max-width: 991.98px) {
+  .image {
+    width: 20rem;
+    height: 20rem;
+  }
+  .mainImage {
+    height: 25rem;
+  }
+  .memberDetails {
+    margin-top: 1.5em;
+  }
+  .mainMemberDetails {
+    margin-top: 6.5rem;
+  }
 }

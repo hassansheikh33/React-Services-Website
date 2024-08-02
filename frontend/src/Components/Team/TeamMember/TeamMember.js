@@ -9,15 +9,15 @@ export default function TeamMember(props) {
       <div className={classes.imageContainer}>
         <img
           onClick={() => navigate(`/team/${props.designation}`)}
-          className={classes.image}
+          className={`${classes.image} ${props.main ? classes.mainImage : ""}`}
           src={props.src}
           alt={props.alt}
-          style={props.height ? { height: props.height } : {}}
         />
       </div>
       <div
-        style={props.mt ? { marginTop: props.mt } : {}}
-        className={classes.memberDetails}
+        className={`${classes.memberDetails} ${
+          props.main ? classes.mainMemberDetails : ""
+        }`}
       >
         <h2>{props.name}</h2>
         <p>{props.designation}</p>

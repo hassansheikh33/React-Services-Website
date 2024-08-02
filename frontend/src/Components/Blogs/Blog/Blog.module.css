@@ -1,5 +1,7 @@
 .image {
   z-index: 0;
+  width: 100%;
+  height: auto;
 }
 
 .imgText {
@@ -63,4 +65,28 @@
   margin-left: 0;
   height: 1rem;
   width: 1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .imgText {
+    padding: 10px;
+  }
+
+  .date {
+    font-size: 0.6rem;
+  }
+
+  .bottomText h2 {
+    font-size: 1rem;
+  }
+
+  .link p {
+    font-size: 0.8rem;
+  }
+
+  .icon {
+    height: 0.8rem;
+    width: 0.8rem;
+  }
 }

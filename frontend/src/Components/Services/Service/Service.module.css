@@ -1,7 +1,7 @@
 .container {
   background-color: rgb(235, 235, 235);
   padding: 15px 30px;
-  max-width: 25%;
+  width: 25%;
   border-radius: 10px;
   text-align: center;
   display: inline-block;
@@ -58,4 +58,30 @@
 .arrow {
   width: 1rem;
   height: 1rem;
+}
+
+/* For devices with width between 992px and 1199px (small laptops) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .container {
+    width: 30%;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .container {
+    width: 30%;
+  }
+}
+
+/* For devices with width between 576px and 767px */
+@media (min-width: 576px) and (max-width: 768px) {
+  .container {
+    width: 60%;
+  }
+}
+
+/* For mobile devices (extra small screen) */
+@media (max-width: 576px) {
+  .container {
+    width: 80%;
+  }
 }

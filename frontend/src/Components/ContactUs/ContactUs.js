@@ -4,7 +4,7 @@ export default function ContactUs() {
   return (
     <div className={classes.container}>
       <div className={classes.left}>
-        <h2 className={classes.h2}>Contact Us for More Information</h2>
+        <h2 className={classes.h2}>Get in Touch!</h2>
         <div className={classes.ContactInfo}>
           <svg
             className={classes.icon}
@@ -133,8 +133,8 @@ export default function ContactUs() {
       <div className={classes.right}>
         <div className={classes.rightContainer}>
           <div className={classes.formContainer}>
-            <h2 className={classes.h2}>Contact Us Form</h2>
-            <form onSubmit={(e) => e.preventDefault()}>
+            <h2 className={`${classes.h2} ${classes.query}`}>Have a Query?</h2>
+            <form onSubmit={(e) => e.preventDefault()} className={classes.form}>
               <fieldset>
                 <label htmlFor="name">Full Name</label>
                 <input type="name" id="name" placeholder="eg. John Doe" />
